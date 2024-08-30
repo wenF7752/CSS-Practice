@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Register Page</h1>
+    <form action="#">
+      <label for="firstname">
+        Username:
+        <input
+          type="text"
+          id="firstname"
+          name="lastname"
+          placeholder="Enter Your First Name"
+        />
+      </label>
+      <br />
+      <label for="lastname">
+        Last Name:
+        <input
+          type="text"
+          id="firstname"
+          name="lastname"
+          placeholder="Enter your Last Name"
+        />
+      </label>
+      <br />
+      <label for="email">
+        Email:
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter Your Email"
+        />
+      </label>
+      <br />
+      <label for="password">
+        Password:
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Enter Your Password"
+          required
+        />
+      </label>
+      <br />
+      <fieldset style="border: 0;">
+       Gender:
+        <label for="female">
+          <input type="radio" id="female" name="gender" value="female" />
+          Female
+        </label>
+        <label for="male">
+          <input type="radio" id="male" name="gender" value="male" />
+          Male
+        </label>
+      </fieldset>
+      <br />
+      <label for "dob"> Date of Birth:
+      <input type="date" id="dob" name="dob" />
+      </label>
+      <br />
+      <label for="habits">
+        Habits:
+        <input type="checkbox" id="sports" name="sports" >
+        <label for="sports">Sports</label>
+        <input type="checkbox" id="eat" name="eat" >
+        <label for="reading">Eat</label>
+        <input type="checkbox" id="sleep" name="sleep" >
+        <label for="cooking">Sleep</label>
+      </label>
+    </form>
+  </body>
+</html>

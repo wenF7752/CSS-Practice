@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms Practice</title>
+
+    <style>
+      label:has(input:not(input[type="checkbox"]):required)::before {
+        content: "*";
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Create a User</h1>
+    <form action="">
+      `
+      <label for="username">
+        Username:
+        <input type="text" id="username" name="username" required />
+      </label>
+      <br />
+      <label for="password">
+        Password:
+        <input type="password" id="password" name="password" required />
+      </label>
+      <br />
+      <fieldset>
+        <legend>Checkboxes</legend>
+        <label for="checkbox1">
+          <input type="checkbox" id="checkbox1" name="checkbox1" />
+          Checkbox 1
+        </label>
+
+        <label for="checkbox2">
+          <input type="checkbox" id="checkbox2" name="checkbox2" />
+          Checkbox 2
+        </label>
+      </fieldset>
+      <input type="submit" value="Create User" />
+    </form>
+  </body>
+</html>
